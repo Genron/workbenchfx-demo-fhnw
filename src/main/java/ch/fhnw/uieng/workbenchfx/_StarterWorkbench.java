@@ -21,7 +21,7 @@ import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 /**
- * @author Dieter Holz
+ * @author Genron
  */
 public class _StarterWorkbench extends Application {
 
