@@ -7,19 +7,15 @@ import ch.fhnw.uieng.module03.lazylist_filtered.mountainapp_solution.service.ser
 import ch.fhnw.uieng.module03.lazylist_filtered.mountainapp_solution.view.RootPane;
 import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchModule;
-import com.dlsc.workbenchfx.view.controls.ToolbarItem;
 import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.TextField;
 
 public class MountainAppModule extends WorkbenchModule {
 
     PagingService<MountainDTO> service;
     Switzerland switzerland;
     private Parent rootPanel;
-
-    private ToolbarItem searchField;
 
     public MountainAppModule() {
         super("Mountain App", MaterialDesignIcon.IMAGE_FILTER_HDR);
@@ -31,26 +27,11 @@ public class MountainAppModule extends WorkbenchModule {
         service = new MountainServiceFileBased();
         switzerland = new Switzerland(service);
         rootPanel = new RootPane(switzerland);
-
-        setupModuleToolbarRight();
-    }
-
-    private void setupModuleToolbarRight() {
-        TextField filter = new TextField();
-        filter.setPromptText("Filter");
-        filter.textProperty().bindBidirectional(switzerland.filterProperty());
-
-        searchField = new ToolbarItem(filter);
     }
 
     @Override
     public Node activate() {
-        getToolbarControlsRight().add(searchField);
         return rootPanel;
     }
 
-    @Override
-    public void deactivate() {
-        getToolbarControlsRight().remove(searchField);
-    }
 }
