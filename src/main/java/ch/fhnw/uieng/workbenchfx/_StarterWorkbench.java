@@ -1,19 +1,9 @@
 package ch.fhnw.uieng.workbenchfx;
 
-import ch.fhnw.uieng.workbenchfx.workbenchmodules.HelloWorldModule;
+import ch.fhnw.uieng.workbenchfx.workbenchmodules.*;
 import com.dlsc.workbenchfx.Workbench;
-import com.dlsc.workbenchfx.model.WorkbenchDialog;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import javafx.application.Application;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.collections.ObservableList;
 import javafx.scene.Scene;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 /**
@@ -29,7 +19,9 @@ public class _StarterWorkbench extends Application {
     public void start(Stage primaryStage) {
 
         Workbench workbench = Workbench.builder(
-                new HelloWorldModule()
+                new CantonAppModule(),
+                new MountainAppModule(),
+                new SwitzerlandModule()
         ).build();
 
         Scene scene = new Scene(workbench);
