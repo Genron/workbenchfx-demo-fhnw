@@ -11,9 +11,9 @@ import javafx.scene.layout.BorderPane;
 public class RootPane extends BorderPane implements ViewMixin {
     private final Switzerland rootPM;
 
-//    private Node header;
+    private Node header;
     private Node content;
-//    private Node footer;
+    private Node footer;
 
     public RootPane(Switzerland pm) {
         this.rootPM = pm;
@@ -28,15 +28,15 @@ public class RootPane extends BorderPane implements ViewMixin {
 
     @Override
     public void initializeParts() {
-//        header = new Header(rootPM);
+        header = new Header(rootPM);
         content = new Content(rootPM);
-//        footer = new Footer(rootPM);
+        footer = new Footer(rootPM);
     }
 
     @Override
     public void layoutParts() {
-//        setTop(header);
+        setTop(header);
         setCenter(content);
-//        setBottom(footer);
+        setBottom(footer);
     }
 }
