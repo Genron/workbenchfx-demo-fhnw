@@ -15,7 +15,7 @@ public class RootPane extends BorderPane implements ViewMixin {
     private Switzerland rootPM;
 
     private ListView<MountainPM> listView;
-    private Node header;
+//    private Node header;
     private Node footer;
 
     public RootPane(Switzerland pm) {
@@ -31,14 +31,14 @@ public class RootPane extends BorderPane implements ViewMixin {
 
     @Override
     public void initializeParts() {
-        header = new Header(rootPM);
+//        header = new Header(rootPM);
         listView = new FHNWListView<>(param -> new MountainCell());
         footer = new Footer(rootPM);
     }
 
     @Override
     public void layoutParts() {
-        setTop(header);
+//        setTop(header);
         setCenter(listView);
         setBottom(footer);
     }

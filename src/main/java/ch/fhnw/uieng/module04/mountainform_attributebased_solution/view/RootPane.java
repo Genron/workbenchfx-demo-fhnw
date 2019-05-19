@@ -13,7 +13,7 @@ import javafx.scene.layout.VBox;
 public class RootPane extends BorderPane implements ViewMixin {
     private Switzerland switzerland;
 
-    private Node toolbar;
+//    private Node toolbar;
     private Node summary;
     private Node form;
 
@@ -30,14 +30,14 @@ public class RootPane extends BorderPane implements ViewMixin {
 
     @Override
     public void initializeParts() {
-        toolbar = new Toolbar(switzerland);
+//        toolbar = new Toolbar(switzerland);
         summary = new Header(switzerland);
         form = new MountainForm(switzerland);
     }
 
     @Override
     public void layoutParts() {
-        setTop(toolbar);
+//        setTop(toolbar);
 
         ScrollPane scrollPane = new ScrollPane(form);
         scrollPane.setFitToHeight(true);
