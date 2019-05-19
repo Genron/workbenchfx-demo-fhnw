@@ -4,7 +4,7 @@
 
 ### IntelliJ ###
 # idea folder
-*.idea/
+.idea/
 
 ### Java ###
 # Compiled class file
