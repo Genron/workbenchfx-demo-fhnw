@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free Brands';
+    src: url("/fonts/fontawesome-free-5.0.3/fa-brands-400.ttf");
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free Regular';
+    src: url("/fonts/fontawesome-free-5.0.3/fa-regular-400.ttf");
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free Solid';
+    src: url("/fonts/fontawesome-free-5.0.3/fa-solid-900.ttf");
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("/fonts/fontawesome-webfont.ttf");
+}
+
+@font-face {
+    font-family: 'Flaticon';
+    src: url("/fonts/flaticon.ttf");
+}
+
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url(/fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url(/fonts/ds_digital/DS-DIGI.TTF);
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url(/fonts/Lato/Lato-Lig.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url(/fonts/Lato/Lato-Reg.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Black';
+    src: url(/fonts/Lato/Lato-Bla.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url(/fonts/Lato/Lato-Bol.ttf);
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url(/fonts/Lato/Lato-Hai.ttf);
+}
+
+

@@ -1,0 +1,193 @@
+.root {
+    -fx-font-family: 'Lato Light';
+    -fx-basic-color: red;
+    -fx-darker-color: derive(-fx-basic-color, -40%);
+    -fx-lighter-color: derive(-fx-basic-color, 80%);
+    -fx-lightest-color: derive(-fx-basic-color, 95%);
+    -fx-dark-text-color: rgb(47.0, 52.0, 57.0);
+    -fx-text-color: rgb(67.0, 72.0, 77.0);
+    -fx-light-gray-color: rgb(200.0, 200.0, 200.0);
+    -fx-lightest-gray-color: rgb(230.0, 230.0, 230.0);
+    -fx-background-color: white;
+}
+
+.tool-bar {
+    -fx-background-color: -fx-basic-color;
+    -fx-padding: 4px;
+}
+
+.tool-bar .button {
+    -fx-border-color: null;
+    -fx-background-color: null;
+    -fx-background-radius: 2px;
+    -fx-font-size: 14px;
+}
+
+.tool-bar .button .text {
+    -fx-fill: white;
+}
+
+.tool-bar .button:hover {
+    -fx-background-color: -fx-basic-color;
+}
+
+.tool-bar .button .text {
+    -fx-font-size: 22px;
+    -fx-fill: white;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-cursor: hand;
+}
+
+.tool-bar .button .text:hover {
+    -fx-fill: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.tool-bar .button:armed .text:hover {
+    -fx-fill: derive(-fx-basic-color, 90%)
+}
+
+.fontawesome .text {
+    -fx-font-family: "FontAwesome";
+}
+
+.flaticon .text {
+    -fx-font-family: "Flaticon";
+}
+
+
+.summary {
+    -fx-padding: 20px 20px 20px 20px;
+    -fx-hgap: 10;
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-pref-height: 210;
+}
+
+.heading {
+    -fx-font-size: 38px;
+}
+
+.subheading {
+    -fx-padding: 15 0 0 0;
+    -fx-font-size: 18px;
+}
+
+.caption {
+    -fx-padding: 3 0 0 0;
+    -fx-font-size: 14px;
+}
+
+.picture {
+    -fx-effect: dropshadow(three-pass-box, #787878, 10, 0, 0, 0);
+}
+
+.form {
+    -fx-padding: 40px 20px 20px 20px;
+    -fx-vgap: 15;
+    -fx-hgap: 5;
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+.spacer {
+    -fx-pref-width: 40;
+    -fx-min-width: 40;
+    -fx-max-width: 40;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow {
+    -fx-background-color: lightgray;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow:hover {
+    -fx-background-color: -fx-basic-color;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-arrow {
+    -fx-background-color: lightgray;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-arrow:hover {
+    -fx-background-color: -fx-basic-color;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-insets: 6 0 6 0;
+}
+
+.scroll-bar .thumb {
+    -fx-border-color: transparent;
+    -fx-background-color: lightgray;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: -fx-lighter-color;
+}
+
+.scroll-bar .thumb:selected {
+    -fx-background-color: -fx-lighter-color;
+}
+
+.scroll-bar .thumb:focused {
+    -fx-background-color: -fx-lighter-color;
+}
+
+.mandatory {
+    -fx-background-color: yellowgreen, white;
+    -fx-background-insets: 0, 2;
+}
+
+.dirty .text {
+    -fx-stroke: darkolivegreen;
+}
+
+
+.invalid .text {
+    -fx-stroke: red;
+}
+
+.rectangular-image-view {
+    -fx-effect: dropshadow(three-pass-box, #787878, 10, 0, 0, 0);
+}

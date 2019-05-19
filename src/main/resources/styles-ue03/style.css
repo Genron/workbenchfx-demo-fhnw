@@ -1,0 +1,150 @@
+
+.root-pane {
+    -fx-font-family: 'Lato Light';
+    -fx-padding: 15;
+    -fx-basic-color: red;
+    -fx-darker-color: derive(-fx-basic-color, -40%);
+    -fx-lighter-color: derive(-fx-basic-color, 80%);
+    -fx-lightest-color: derive(-fx-basic-color, 95%);
+    -fx-dark-text-color: rgb(47.0, 52.0, 57.0);
+    -fx-text-color: rgb(67.0, 72.0, 77.0);
+    -fx-light-gray-color: rgb(200.0, 200.0, 200.0);
+    -fx-lightest-gray-color: rgb(230.0, 230.0, 230.0);
+}
+
+.header {
+    -fx-background-color: rgb(250, 250, 250);
+    -fx-border-color: lightgray;
+    -fx-padding: 4px;
+}
+
+.filter {
+    -fx-background-radius: 16px;
+    -fx-font-size: 12px;
+}
+
+.filter:focused {
+    -fx-focus-color: derive(-fx-basic-color, -30%);
+    -fx-faint-focus-color: rgba(255, 152, 0, 0.06);
+}
+
+.table-column.center {
+    -fx-alignment: CENTER;
+}
+
+.list-title .text {
+    -fx-font-size: 28px;
+}
+
+.list-description .text {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+}
+
+.list-cell:focused .text {
+    -fx-fill: white;
+}
+
+.list-cell:focused {
+    -fx-background-color: -fx-lightest-color !important;
+}
+
+.list-cell:odd:focused {
+    -fx-background-color: -fx-lightest-color !important;
+}
+
+.list-cell:hover {
+    -fx-background-color: lightgrey;
+}
+
+.list-cell:odd:hover {
+    -fx-background-color: lightgrey;
+}
+
+.list-cell:odd {
+    -fx-background: -fx-control-inner-background;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow {
+    -fx-background-color: lightgray;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow:hover {
+    -fx-background-color: -fx-basic-color;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-arrow {
+    -fx-background-color: lightgray;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .increment-arrow:hover {
+    -fx-background-color: -fx-basic-color;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-insets: 6 0 6 0;
+}
+
+.scroll-bar .thumb {
+    -fx-border-color: transparent;
+    -fx-background-color: lightgray;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: -fx-lighter-color;
+}
+
+.scroll-bar .thumb:selected {
+    -fx-background-color: -fx-lighter-color;
+}
+
+.scroll-bar .thumb:focused {
+    -fx-background-color: -fx-lighter-color;
+}
+
+.round-image-view {
+    -fx-pref-width: 84px;
+    -fx-pref-height: 84px;
+}
+
+.round-image-view-circle {
+    -fx-stroke-width: 1px;
+    -fx-stroke: -fx-lighter-color;
+}
+
+.footer {
+    -fx-background-color: rgb(250, 250, 250);
+    -fx-padding: 10;
+    -fx-hgap: 10;
+    -fx-vgap: 5;
+    -fx-pref-width: 350;
+    -fx-border-color: lightgray;
+
+}
+
+

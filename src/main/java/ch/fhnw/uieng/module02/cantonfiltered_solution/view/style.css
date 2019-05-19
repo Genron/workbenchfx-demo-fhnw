@@ -1,0 +1,14 @@
+.root-pane {
+    -fx-padding: 15;
+}
+
+.filter {
+    -fx-background-radius: 16px;
+    -fx-font-size: 12px;
+}
+
+.footer {
+    -fx-padding: 10 0 0 0;
+}
+
+

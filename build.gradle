@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.karakun'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+    maven {
+        url 'http://maven.bestsolution.at/efxclipse-releases/'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.dlsc.workbenchfx', name: 'workbenchfx-core', version: '11.0.0'
+    compile group: 'com.dlsc.preferencesfx', name: 'preferencesfx-core', version: '11.1.0'
+}

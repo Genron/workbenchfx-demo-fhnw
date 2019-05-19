@@ -1,0 +1,20 @@
+.root > * {
+  -primary-color: #0096c9;
+  -primary-variant-color: #0070a0;
+  -secondary-color: #ff9191;
+  -secondary-variant-color: #d76e6e;
+  -tertiary-color: #9acd32;
+  -tertiary-variant-color: #709b2b;
+  -background-color: #FFFFFF;
+  -surface-color: #FFFFFF;
+  -error-color: #B00020;
+  -on-primary-color: #FFFFFF;
+  -on-secondary-color: #FFFFFF;
+  -on-background-color: #000000;
+  -on-surface-color: #000000;
+  -on-error-color: #FFFFFF;
+}
+
+.logo {
+  -fx-graphic: url("logo.png");
+}
