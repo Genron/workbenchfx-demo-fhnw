@@ -1,6 +1,8 @@
 package ch.fhnw.uieng.workbenchfx;
 
-import ch.fhnw.uieng.workbenchfx.workbenchmodules.*;
+import ch.fhnw.uieng.workbenchfx.workbenchmodules.CantonAppModule;
+import ch.fhnw.uieng.workbenchfx.workbenchmodules.MountainAppModule;
+import ch.fhnw.uieng.workbenchfx.workbenchmodules.SwitzerlandModule;
 import com.dlsc.preferencesfx.PreferencesFx;
 import com.dlsc.preferencesfx.model.Category;
 import com.dlsc.preferencesfx.model.Group;
@@ -37,8 +39,6 @@ public class _StarterWorkbench extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
 
-        preferences = createPreferences();
-
         workbench = Workbench.builder(
                 new CantonAppModule(),
                 new MountainAppModule(),
@@ -46,6 +46,8 @@ public class _StarterWorkbench extends Application {
         ).navigationDrawerItems(
                 setupPreferencesItem()
         ).build();
+
+        preferences = createPreferences();
 
         Scene scene = new Scene(workbench);
         primaryStage.setScene(scene);
@@ -55,8 +57,6 @@ public class _StarterWorkbench extends Application {
 
         primaryStage.show();
         primaryStage.centerOnScreen();
-
-        setNightMode(false);
     }
 
     private MenuItem setupPreferencesItem() {
