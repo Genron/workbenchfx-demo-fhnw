@@ -29,7 +29,8 @@ public class _StarterWorkbench extends Application {
     public void start(Stage primaryStage) {
 
         Workbench workbench = Workbench.builder(
-                new HelloWorldModule()
+                new HelloWorldModule("Hello World", MaterialDesignIcon.HUMAN, "Hello World"),
+                new HelloWorldModule("Second World", MaterialDesignIcon.LIGHTBULB, "Second World")
         ).build();
 
         Scene scene = new Scene(workbench);

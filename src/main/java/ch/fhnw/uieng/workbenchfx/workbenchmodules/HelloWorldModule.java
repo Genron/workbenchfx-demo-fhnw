@@ -6,12 +6,15 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 
 public class HelloWorldModule extends WorkbenchModule {
-    public HelloWorldModule() {
-        super("Hello World", MaterialDesignIcon.HUMAN);
+    private final Label content;
+
+    public HelloWorldModule(String name, MaterialDesignIcon icon, String labelText) {
+        super(name, icon);
+        content = new Label(labelText);
     }
 
     @Override
     public Node activate() {
-        return new Label("Hello World");
+        return content;
     }
 }
