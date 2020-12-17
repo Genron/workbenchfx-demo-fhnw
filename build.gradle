@@ -7,10 +7,16 @@ repositories {
     maven {
         url  "https://dl.bintray.com/jerady/maven"
     }
+    maven {
+        url "https://dl.bintray.com/jerady/maven"
+    }
 }
 
 dependencies {
     compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+
+    compile group: 'de.jensd', name: 'fontawesomefx-fontawesome', version: '4.7.0-11'
+    compile group: 'de.jensd', name: 'fontawesomefx-commons', version: '11.0'
 
     compile group: 'com.dlsc.workbenchfx', name: 'workbenchfx-core', version: '11.1.0'
     compile group: 'com.dlsc.preferencesfx', name: 'preferencesfx-core', version: '11.7.0'
