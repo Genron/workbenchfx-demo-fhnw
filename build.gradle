@@ -4,10 +4,14 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven {
+        url  "https://dl.bintray.com/jerady/maven"
+    }
 }
 
 dependencies {
     compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
 
     compile group: 'com.dlsc.workbenchfx', name: 'workbenchfx-core', version: '11.1.0'
+    compile group: 'com.dlsc.preferencesfx', name: 'preferencesfx-core', version: '11.7.0'
 }
