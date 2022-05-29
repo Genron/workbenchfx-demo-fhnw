@@ -6,9 +6,9 @@ import ch.fhnw.uieng.module02.cantonfiltered_solution.service.serviceimpl.Canton
 import ch.fhnw.uieng.module02.cantonfiltered_solution.view.RootPane;
 import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchModule;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 
 public class CantonAppModule extends WorkbenchModule {
 
@@ -17,7 +17,7 @@ public class CantonAppModule extends WorkbenchModule {
     private Parent rootPanel;
 
     public CantonAppModule() {
-        super("Canton App", MaterialDesignIcon.CITY);
+        super("Canton App", MaterialDesign.MDI_CITY);
     }
 
     @Override

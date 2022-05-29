@@ -6,9 +6,9 @@ import ch.fhnw.uieng.module04.mountainform_attributebased_solution.service.servi
 import ch.fhnw.uieng.module04.mountainform_attributebased_solution.view.RootPane;
 import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchModule;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 
 public class SwitzerlandModule extends WorkbenchModule {
 
@@ -17,7 +17,7 @@ public class SwitzerlandModule extends WorkbenchModule {
     private Parent rootPanel;
 
     public SwitzerlandModule() {
-        super("Switzerland", MaterialDesignIcon.FLAG);
+        super("Switzerland", MaterialDesign.MDI_FLAG);
     }
 
     @Override

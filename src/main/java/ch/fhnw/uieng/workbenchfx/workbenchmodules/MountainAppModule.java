@@ -7,9 +7,9 @@ import ch.fhnw.uieng.module03.lazylist_filtered.mountainapp_solution.service.ser
 import ch.fhnw.uieng.module03.lazylist_filtered.mountainapp_solution.view.RootPane;
 import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchModule;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 
 public class MountainAppModule extends WorkbenchModule {
 
@@ -18,7 +18,7 @@ public class MountainAppModule extends WorkbenchModule {
     private Parent rootPanel;
 
     public MountainAppModule() {
-        super("Mountain App", MaterialDesignIcon.IMAGE_FILTER_HDR);
+        super("Mountain App", MaterialDesign.MDI_IMAGE_FILTER_HDR);
     }
 
     @Override
