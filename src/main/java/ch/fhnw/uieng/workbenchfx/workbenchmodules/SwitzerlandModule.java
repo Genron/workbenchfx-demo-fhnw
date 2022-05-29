@@ -10,12 +10,12 @@ import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchDialog;
 import com.dlsc.workbenchfx.model.WorkbenchModule;
 import com.dlsc.workbenchfx.view.controls.ToolbarItem;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuItem;
+import org.kordamp.ikonli.javafx.FontIcon;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 
 public class SwitzerlandModule extends WorkbenchModule {
 
@@ -28,7 +28,7 @@ public class SwitzerlandModule extends WorkbenchModule {
     private ToolbarItem languageItem;
 
     public SwitzerlandModule() {
-        super("Switzerland", MaterialDesignIcon.FLAG);
+        super("Switzerland", MaterialDesign.MDI_FLAG);
     }
 
     @Override
@@ -46,13 +46,13 @@ public class SwitzerlandModule extends WorkbenchModule {
         MountainDetailPM mountain = switzerland.getCurrentMountain();
 
         saveButton = new ToolbarItem(
-                new MaterialDesignIconView(MaterialDesignIcon.CONTENT_SAVE), event -> switzerland.save()
+                new FontIcon(MaterialDesign.MDI_CONTENT_SAVE), event -> switzerland.save()
         );
         saveButton.disableProperty().bind((mountain.dirtyProperty().not())
                 .or(mountain.validProperty().not()));
 
         cancelButton = new ToolbarItem(
-                new MaterialDesignIconView(MaterialDesignIcon.UNDO), event -> switzerland.revert()
+                new FontIcon(MaterialDesign.MDI_UNDO), event -> switzerland.revert()
         );
         cancelButton.disableProperty().bind(mountain.dirtyProperty().not()
                 .and(mountain.validProperty()));
@@ -67,7 +67,7 @@ public class SwitzerlandModule extends WorkbenchModule {
         languageUKButton.setOnAction(event -> switzerland.setCurrentLanguage(Language.UK));
         languageUKButton.disableProperty().bind(switzerland.currentLanguageProperty().isEqualTo(Language.UK));
 
-        languageItem = new ToolbarItem("Language", new MaterialDesignIconView(MaterialDesignIcon.TRANSLATE), languageDEButton, languageUKButton);
+        languageItem = new ToolbarItem("Language", new FontIcon(MaterialDesign.MDI_TRANSLATE), languageDEButton, languageUKButton);
     }
 
     private void insertWorkbenchToolbarItems() {
