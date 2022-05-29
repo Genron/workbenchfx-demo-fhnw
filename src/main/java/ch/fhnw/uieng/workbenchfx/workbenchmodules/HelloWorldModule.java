@@ -1,13 +1,13 @@
 package ch.fhnw.uieng.workbenchfx.workbenchmodules;
 
 import com.dlsc.workbenchfx.model.WorkbenchModule;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 
 public class HelloWorldModule extends WorkbenchModule {
     public HelloWorldModule() {
-        super("Hello World", MaterialDesignIcon.HUMAN);
+        super("Hello World", MaterialDesign.MDI_HUMAN);
     }
 
     @Override

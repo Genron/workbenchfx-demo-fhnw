@@ -9,8 +9,6 @@ import com.dlsc.preferencesfx.model.Group;
 import com.dlsc.preferencesfx.model.Setting;
 import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchDialog;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import javafx.application.Application;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -21,6 +19,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
+import org.kordamp.ikonli.javafx.FontIcon;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 
 /**
  * @author Genron
@@ -60,7 +60,7 @@ public class _StarterWorkbench extends Application {
     }
 
     private MenuItem setupPreferencesItem() {
-        MenuItem openPreferences = new MenuItem("Settings", new MaterialDesignIconView(MaterialDesignIcon.SETTINGS));
+        MenuItem openPreferences = new MenuItem("Settings", new FontIcon(MaterialDesign.MDI_SETTINGS));
         openPreferences.setOnAction(event -> {
             openPreferences.setDisable(true);
             workbench.showDialog(

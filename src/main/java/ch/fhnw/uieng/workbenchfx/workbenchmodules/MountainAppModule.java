@@ -8,7 +8,7 @@ import ch.fhnw.uieng.module03.lazylist_filtered.mountainapp_solution.view.RootPa
 import com.dlsc.workbenchfx.Workbench;
 import com.dlsc.workbenchfx.model.WorkbenchModule;
 import com.dlsc.workbenchfx.view.controls.ToolbarItem;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
@@ -22,7 +22,7 @@ public class MountainAppModule extends WorkbenchModule {
     private ToolbarItem searchField;
 
     public MountainAppModule() {
-        super("Mountain App", MaterialDesignIcon.IMAGE_FILTER_HDR);
+        super("Mountain App", MaterialDesign.MDI_IMAGE_FILTER_HDR);
     }
 
     @Override
