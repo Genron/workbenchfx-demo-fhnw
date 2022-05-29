@@ -2,19 +2,10 @@ package ch.fhnw.uieng.workbenchfx;
 
 import ch.fhnw.uieng.workbenchfx.workbenchmodules.HelloWorldModule;
 import com.dlsc.workbenchfx.Workbench;
-import com.dlsc.workbenchfx.model.WorkbenchDialog;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import javafx.application.Application;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.collections.ObservableList;
 import javafx.scene.Scene;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
+import org.kordamp.ikonli.materialdesign.MaterialDesign;
 
 /**
  * @author Genron
@@ -29,8 +20,8 @@ public class _StarterWorkbench extends Application {
     public void start(Stage primaryStage) {
 
         Workbench workbench = Workbench.builder(
-                new HelloWorldModule("Hello World", MaterialDesignIcon.HUMAN, "Hello World"),
-                new HelloWorldModule("Second World", MaterialDesignIcon.LIGHTBULB, "Second World")
+                new HelloWorldModule("Hello World", MaterialDesign.MDI_HUMAN, "Hello World"),
+                new HelloWorldModule("Second World", MaterialDesign.MDI_LIGHTBULB, "Second World")
         ).build();
 
         Scene scene = new Scene(workbench);
